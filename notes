@@ -40,3 +40,12 @@ Terraform Workflow:-
 5. terraform show - This command is used to display the resources in the configuration file.
 
 **Note**: How to know what are the providers available, what are the exact parameters that needs to be passed? https://registry.terraform.io/namespaces/hashicorp.
+
+---
+
+**Configuration Directory:-** <br>
+When you have multiple .tf files to provision your infra or system, terraform offers to create such naming convention files that are easy to handle - <br>
+1. main.tf - Executes the resource configuration
+2. variables.tf - Stores the defined variables that can be usable in main.tf
+3. outputs.tf - Writes the output data from configuration file
+4. provider.tf - Configures the Provider that needs to be installed as plugin
