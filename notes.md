@@ -49,3 +49,11 @@ When you have multiple .tf files to provision your infra or system, terraform of
 2. variables.tf - Stores the defined variables that can be usable in main.tf
 3. outputs.tf - Writes the output data from configuration file
 4. provider.tf - Configures the Provider that needs to be installed as plugin
+
+---
+
+**Variable Precedence** <br>
+1. ENV (export TF_KEY=VALUE)  -> Lowest
+2. *.tfvars
+3. *.auto.tfvars
+4. terraform -e "key=value"   -> Highest
